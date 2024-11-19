@@ -1,0 +1,175 @@
+/* Prelims smth */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+.hidden {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    padding: 1em;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Link Containers */
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+/* Video Containers */
+.vid1, .vid2, .vid3 {
+    height: 500px;
+    width: 500px;
+/*     border: 3px solid red;
+ */    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.vid1 .container, .vid2 .container, .vid3 .container {
+    height: 300px;
+    width: 400px;
+/*     border: 3px solid orange;
+ */    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vid1 .caption, .vid2 .caption, .vid3 .caption {
+    height: 50px;
+    width: 300px;
+/*     border: 3px solid lightgreen;
+ */    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Videos */
+.vid1 video {
+    height: 300px;
+    width: 400px;
+}
+.vid2 video {
+    height: 230px;
+    width: 400px;
+}
+.vid3 video {
+    height: 230px;
+    width: 400px;
+}
+
+/* Thumbnails */
+.vid1 .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vid1 .thumbnail img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+}
+.vid2 .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vid2 .thumbnail img {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    position: absolute;
+}
+.vid3 .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vid3 .thumbnail img {
+    height: 240px;
+    width: 400px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+/* Img Hovering */
+#LateralusIMG:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+#sidVerstappenImg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+#PUPHymnImg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Tooltips and :hover effect */
+.vid1 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+.vid1 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+#LateralusIMG:hover + .tooltip {
+    opacity: 1;
+}
+#LateralusVid:hover + .tooltip {
+    opacity: 1;
+}
+.vid2 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+.vid2 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+#sidVerstappenImg:hover + .tooltip {
+    opacity: 1;
+}
+#sidVerstappenVideo:hover + .tooltip {
+    opacity: 1;
+}
+.vid3 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+.vid3 .tooltip {
+    position: fixed;
+    top: 8rem;
+    opacity: 0;
+}
+#PUPHymnImg:hover + .tooltip {
+    opacity: 1;
+}
+#PUPHymnImg:hover + .tooltip {
+    opacity: 1;
+}

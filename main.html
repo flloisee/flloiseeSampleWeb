@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAAGHH~ Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>HTML Videos Sample by flloisee</h1>
+    </header>
+    <!-- Main Body -->
+    <main>
+        <!-- Video 1 -->
+        <div class="vid1">
+            <div class="container">
+                <div class="link">
+                    <div class="thumbnail">
+                        <img src="Lateralus.jpg" alt="Lateralus" id="LateralusIMG" onclick="reveal1()">
+                        <p class="tooltip ">Click to play/pause.</p>
+                    </div>
+                    <!-- Actual Video 1 -->
+                    <video controls class="hidden" id="LateralusVid" onclick="reveal1()">
+                        <source src="TOOL - Parabola (Official Video).mp4">
+                    </video>
+                    <p class="tooltip ">Click to play/pause.</p>
+                </div>
+            </div>
+            <div class="caption">Parabola - TOOL &lpar;Official Music video&rpar; &lpar;mmm TOOL&rpar;</div>
+        </div>
+        <!-- Video 2 -->
+        <div class="vid2">
+            <div class="container">
+                <div class="link">
+                    <div class="thumbnail">
+                        <!-- Video 2 Thumbnail -->
+                        <img src="sidVerstappen.jpg" alt="Sid Verstappen" id="sidVerstappenImg" onclick="reveal2()">
+                        <p class="tooltip">Click to play/pause.</p>
+                    </div>
+                    <!-- Actual Video 2 -->
+                    <video controls class="hidden" id="sidVerstappenVideo" onclick="reveal2()">
+                        <source src="Jos Vs Max Verstappen.m4v" >
+                    </video>
+                    <p class="tooltip">Click to play/pause.</p>
+                </div>
+            </div>
+            <div class="caption">Max Verstappen Vs. Jos Verstappen</div>
+        </div>
+        <!-- Video 3 -->
+        <div class="vid3">
+            <div class="container">
+                <div class="link">
+                    <!-- Video 3 Thumbnail -->
+                    <div class="thumbnail">
+                        <img src="PUP Hymn Thumbnail.png" alt="PUP Hymn" id="PUPHymnImg" onclick="reveal3()">
+                        <p class="tooltip">Click to play/pause.</p>
+                    </div>
+                    <!-- Actual Video 3 -->
+                    <video controls id="PUPHymnVid" class="hidden" onclick="reveal3()">
+                        <source src="PUP Hymn MV (1-1 Makadiyos).m4v">
+                    </video>
+                    <p class="tooltip">Click to play/pause.</p>
+                </div>
+            </div>
+            <div class="caption">PUP Hymn MV (1-1 Makadiyos)</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
