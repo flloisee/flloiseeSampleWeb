@@ -1,3 +1,4 @@
+/* To hide and reveal the thumbnails and videos on click, pause and play the videos too */
 function reveal1() {
     let Lateralus = document.getElementById("LateralusIMG");
     let LateralusVideo = document.getElementById("LateralusVid");
@@ -6,6 +7,7 @@ function reveal1() {
     LateralusVideo.play();
     console.log("Test");
 }
+
 function reveal2() {
     let sidVerstappenImg = document.getElementById("sidVerstappenImg");
     let sidVerstappenVideo = document.getElementById("sidVerstappenVideo");
@@ -14,6 +16,7 @@ function reveal2() {
     sidVerstappenVideo.play();
     console.log("Test");
 }
+
 function reveal3() {
     let PUPHymnImg = document.getElementById("PUPHymnImg");
     let PUPHymnVid = document.getElementById("PUPHymnVid");
